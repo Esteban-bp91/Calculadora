@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- Head con las etiquetas necesarias-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculadora.css">
-    <script src="calculadora.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css"> <!-- Conexion con su respectivo CSS-->
+    <script src="calculadora.js" defer></script> <!-- Conexion con su respectivo JavaScript-->
+    <title>Calculadora</title>
 </head>
 <body>
-    <div class="container">
-        <input type="text" id="screen" oninput=longMax()>
-        <input type="button" value="C" class="btn" onclick=clearScreen()>
+    <div class="container"> <!-- Contenedor div de la calculadora-->
+        <input type="text" id="screen" oninput=longMax()> <!-- Pantalla de la calculadora-->
+        <input type="button" value="C" class="btn" onclick=clearScreen()> <!-- Boton C para el reseteo de la pantalla-->
 
-        <div class="keys">
+        <div class="keys"> <!-- Contenedor para el resto de botones-->
 
-            <input type="button" value="√" class="operator"  onclick=calcularRaiz()>
-            <input type="button" value="log" class="operator" onclick=calcularLog()>
-            <input type="button" value="ln" class="operator" onclick=calcularLn()>
-            <input type="button" value="x^y" class="operator" onclick=insert(String.fromCharCode(94))>
+            <input type="button" value="√" class="operator"  onclick=calcularRaiz()> <!-- Boton para el calculo de la raiz cuadrada del número de la pantalla-->
+            <input type="button" value="log" class="operator" onclick=calcularLog()> <!-- Boton para el calculo del logaritmo en base 10-->
+            <input type="button" value="ln" class="operator" onclick=calcularLn()> <!-- Boton para el calculo del logaritmo neperiano-->
+            <input type="button" value="x^y" class="operator" onclick=insert(String.fromCharCode(94))> <!-- Boton para insertar el caracter '^' -->
 
-            <input type="button" value="7" class="btn" onclick=insert(7)>
-            <input type="button" value="8" class="btn" onclick=insert(8)>
-            <input type="button" value="9" class="btn" onclick=insert(9)>
+            <input type="button" value="7" class="btn" onclick=insert(7)> <!-- Boton para insertar el numero 7 -->
+            <input type="button" value="8" class="btn" onclick=insert(8)> <!-- Boton para insertar el numero 8 -->
+            <input type="button" value="9" class="btn" onclick=insert(9)> <!-- Boton para insertar el numero 9 -->
 
-            <input type="button" value="/" class="operator" onclick=insert(String.fromCharCode(47))>
-            <input type="button" value="4" class="btn" onclick=insert(4)>
-            <input type="button" value="5" class="btn" onclick=insert(5)>
-            <input type="button" value="6" class="btn" onclick=insert(6)>
+            <input type="button" value="/" class="operator" onclick=insert(String.fromCharCode(47))> <!-- Boton para insertar el caracter '/' -->
+            <input type="button" value="4" class="btn" onclick=insert(4)> <!-- Boton para insertar el numero 4 -->
+            <input type="button" value="5" class="btn" onclick=insert(5)> <!-- Boton para insertar el numero 5 -->
+            <input type="button" value="6" class="btn" onclick=insert(6)> <!-- Boton para insertar el numero 6 -->
 
-            <input type="button" value="*" class="operator" onclick=insert(String.fromCharCode(42))>
-            <input type="button" value="1" class="btn" onclick=insert(1)>
-            <input type="button" value="2" class="btn" onclick=insert(2)>
-            <input type="button" value="3" class="btn" onclick=insert(3)>
+            <input type="button" value="*" class="operator" onclick=insert(String.fromCharCode(42))> <!-- Boton para insertar el caracter '*' -->
+            <input type="button" value="1" class="btn" onclick=insert(1)> <!-- Boton para insertar el numero 1 -->
+            <input type="button" value="2" class="btn" onclick=insert(2)> <!-- Boton para insertar el numero 2 -->
+            <input type="button" value="3" class="btn" onclick=insert(3)> <!-- Boton para insertar el numero 3 -->
 
-            <input type="button" value="-" class="operator" onclick=insert(String.fromCharCode(45))>
-            <input type="button" value="0" class="btn" onclick=insert(0)>
+            <input type="button" value="-" class="operator" onclick=insert(String.fromCharCode(45))> <!-- Boton para insertar el caracter '-' -->
+            <input type="button" value="0" class="btn" onclick=insert(0)> <!-- Boton para insertar el numero 0 -->
 
-            <input type="button" value="." class="operator" onclick=insert(String.fromCharCode(46))>
-            <input type="button" value="=" class="operator" onclick=calcular()>
-            <input type="button" value="+" class="operator" onclick=insert(String.fromCharCode(43))>
+            <input type="button" value="." class="operator" onclick=insert(String.fromCharCode(46))> <!-- Boton para insertar el caracter '.' -->
+            <input type="button" value="=" class="operator" onclick=calcular()> <!-- Boton para el calculo de la operación introducida-->
+            <input type="button" value="+" class="operator" onclick=insert(String.fromCharCode(43))> <!-- Boton para insertar el caracter '+' -->
         </div>
     </div>
 </body>
