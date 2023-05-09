@@ -23,11 +23,14 @@ function calcular(){
 
 // Funcion longMax() para restringir los cálculos de más de 10 dígitos. No funciona
   function longMax(){
-    console.log('entra en longmax');
-    if (screen.value.length === 11) {
-      console.log('Mas de 10 digitos');
-      screen.value = screen.value.slice(0, 10);
-      alert('No se pueden introducir más de 10 dígitos');
+    const pantalla = new Array[12];
+    let pos = 0;
+    if(pos <= 11){
+      let valor = screen.value;
+      pantalla[pos] = valor;
+      pos++;
+    } else {
+      alert('No puede superar 12 dígitos');
     }
   }
 
